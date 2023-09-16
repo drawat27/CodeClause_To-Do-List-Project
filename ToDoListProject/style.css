@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../Imgs/back.jpg);
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.todo{
+    width: 100%;
+    max-width: 550px;
+    /* background-color: #fff; */
+    background-image: url(../Imgs/layout.png);
+    margin: 100px auto 20px;   /* from top,left-right and bottom*/
+    padding: 40px 30px 70px;  /* from top ,left-right and bottom*/
+    border-radius: 10px;
+}
+.todo h2{
+color: #002765;
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+
+}
+.todo h2 img{
+    width: 55px;
+    margin-left: 25px;
+    padding: 5px;
+}
+.textarea{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #d4d5d6;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    
+}
+button{
+    border: none;
+    outline: none;
+    padding: 15px 50px;
+    background: #2fb34a;
+    columns: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    
+    
+}
+ul li{
+    
+    list-style:none;
+    font-size: 20px;
+    padding: 12px  8px 12px 50px;
+    margin: 10px 30px 5px 20px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;  /*for radio image used in below*/
+
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(../Imgs/radio.png);
+    background-size:cover ;
+    background-position: center;
+    top: 9px;
+    left: 8px;
+}
+ul li.completed{
+    color: #056f1c;
+    text-decoration: line-through;
+
+}
+ul li.completed::before{
+background-image: url(../Imgs/completed.jpg );
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: #8d0606;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+}
+ul li span:hover{                   /* hover effect*/
+    background: #cf7878fb;
+    
+}
+
+
